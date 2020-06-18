@@ -160,13 +160,13 @@ def serve_model():
     else:
         # If model is small, receive it by a standard json
         serialized_model = request.form[MODEL.MODEL]
-
+    
     # Encode the model accordingly
     serialized_model = serialized_model.encode(encoding)
 
     # save the model for later usage
     response = model_controller.save(
-        sy.local_worker,
+        local_worker,
         serialized_model,
         model_id,
         allow_download,
