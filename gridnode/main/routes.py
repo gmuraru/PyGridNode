@@ -98,7 +98,7 @@ def show_status():
     )
     ids = map(lambda x: x.id, connected_workers)
 
-    status = "OpenGrid" if len(list(ids)) > 0 else ""
+    status = "OpenGrid"
 
     return Response(
         json.dumps({RESPONSE_MSG.SUCCESS: True, "status": status}),
