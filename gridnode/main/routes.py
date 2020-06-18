@@ -160,7 +160,7 @@ def serve_model():
     else:
         # If model is small, receive it by a standard json
         serialized_model = request.form[MODEL.MODEL]
-    
+
     # Encode the model accordingly
     serialized_model = serialized_model.encode(encoding)
 
