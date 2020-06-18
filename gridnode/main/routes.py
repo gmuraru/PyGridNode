@@ -13,7 +13,6 @@ from flask import request, send_from_directory
 import syft as sy
 from syft.workers.node_client import NodeClient
 from flask_cors import cross_origin
-from flask_login import current_user
 
 from . import html, local_worker
 
